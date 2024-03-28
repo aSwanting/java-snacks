@@ -8,11 +8,11 @@ public class Snack01 {
         int userNumber;
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter number between 10 and 20");
+        System.out.println("Enter an even number between 10 and 20");
         userNumber = Integer.parseInt(scan.nextLine());
 
-        while (userNumber < 10 || userNumber > 20) {
-            System.out.println("NO! Enter number between 10 and 20");
+        while (userNumber < 10 || userNumber > 20 || userNumber % 2 > 0) {
+            System.out.println("NO! Enter an even number between 10 and 20");
             userNumber = Integer.parseInt(scan.nextLine());
         }
 
