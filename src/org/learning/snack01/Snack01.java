@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Snack01 {
     public static void main(String[] args) {
+
         int userNumber;
         Scanner scan = new Scanner(System.in);
 
@@ -17,5 +18,6 @@ public class Snack01 {
 
         System.out.println("You entered " + userNumber + ". Great Choice!");
         scan.close();
+
     }
 }
