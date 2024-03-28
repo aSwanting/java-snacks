@@ -10,8 +10,6 @@ public class Snack05 {
         String userInput = scan.nextLine();
         scan.close();
 
-//        String userInput = "aaa222£££";
-
         int letterCount = 0;
         int digitCount = 0;
         int symbolCount = 0;

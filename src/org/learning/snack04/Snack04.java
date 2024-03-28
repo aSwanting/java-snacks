@@ -11,7 +11,7 @@ public class Snack04 {
         String userInput = scan.nextLine();
         scan.close();
 
-        for (int i = 0; i < userInput.length() / 2; i++) {
+        for (int i = 0; i < userInput.length() / 2 && isPalindrome; i++) {
             char currentLeft = userInput.toLowerCase().charAt(i);
             char currentRight = userInput.toLowerCase().charAt(userInput.length() - 1 - i);
             System.out.println(currentLeft + " " + currentRight);

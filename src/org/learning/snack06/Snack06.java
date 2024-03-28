@@ -15,18 +15,13 @@ public class Snack06 {
         minutes = seconds / 60;
         hours = minutes / 60;
 
-        if (minutes > 0) {
-            seconds = seconds - 60 * minutes;
-        }
-
-        if (hours > 0) {
-            minutes = minutes - 60 * hours;
-        }
+        if (minutes > 0) seconds = seconds - 60 * minutes;
+        if (hours > 0) minutes = minutes - 60 * hours;
 
         String formattedTotalTime = String.format("%02d:%02d:%02d", hours, minutes, seconds);
-
-
         System.out.println(formattedTotalTime);
 
     }
 }
+
+
